@@ -3,27 +3,22 @@ from typing import List
 
 
 class StoreError(Exception):
-    """Базовий виняток системи інтернет-магазину."""
     pass
 
 
 class AuthenticationError(StoreError):
-    """Помилка автентифікації."""
     pass
 
 
 class ProductNotFoundError(StoreError):
-    """Товар не знайдено."""
     pass
 
 
 class OutOfStockError(StoreError):
-    """Недостатньо товару на складі."""
     pass
 
 
 class InvalidOperationError(StoreError):
-    """Недопустима операція."""
     pass
 
 
